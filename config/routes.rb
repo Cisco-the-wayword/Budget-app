@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :users
 
-  devise_scope :user do  
-    get '/users/sign_out' => 'devise/sessions#destroy'     
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
-  root to: "users#index"
+  root to: 'users#index'
   resources :users, only: %i[index]
 
   resources :groups, only: %i[index new create show destroy update] do

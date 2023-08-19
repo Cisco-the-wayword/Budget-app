@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Group < ApplicationRecord
   belongs_to :user
   has_many :entities, dependent: :delete_all
