@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Controller for entities.
 class EntitiesController < ApplicationController
   before_action :set_entity, only: %i[show update destroy]
 
