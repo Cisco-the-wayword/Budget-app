@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Controller for users.
 class UsersController < ApplicationController
   skip_before_action :authenticate_user!, only: %i[index]

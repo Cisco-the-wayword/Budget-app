@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Entity model.
 class Entity < ApplicationRecord
   belongs_to :user, foreign_key: :author_id
