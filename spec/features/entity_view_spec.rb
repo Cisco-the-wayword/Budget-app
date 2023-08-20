@@ -8,7 +8,7 @@ RSpec.describe 'entities#index', type: :feature do
                             author_id: @user.id)
 
     visit new_user_session_path
-    fill_in 'Email', with: 'fpsapc@gmail.com'
+    fill_in 'Email', with: 'me@gmail.com'
     fill_in 'Password', with: '123456'
     click_button 'Log in'
 
