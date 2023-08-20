@@ -2,13 +2,13 @@ require 'rails_helper'
 
 RSpec.describe 'group/index', type: :feature do
   before(:each) do
-    @user = User.create(name: 'Salman', email: 'fpsapc@gmail.com', password: '123456')
+    @user = User.create(name: 'Cisco', email: 'me@gmail.com', password: '123456')
     @group = Group.create(icon: 'icon.png', name: 'Group', user_id: @user.id)
     @entity = Entity.create(name: 'Transaction', amount: '100', group_id: @group.id, user_id: @user.id,
                             author_id: @user.id)
 
     visit new_user_session_path
-    fill_in 'Email', with: 'fpsapc@gmail.com'
+    fill_in 'Email', with: 'me@gmail.com'
     fill_in 'Password', with: '123456'
     click_button 'Log in'
   end

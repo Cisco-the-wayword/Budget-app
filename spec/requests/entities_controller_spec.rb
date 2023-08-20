@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Entity', type: :request do
   before(:example) do
-    @user = User.create(name: 'Salman', email: 'fpsapc@gmail.com', password: '123456')
+    @user = User.create(name: 'Cisco', email: 'me@gmail.com', password: '123456')
     @group = Group.create(icon: 'icon.png', name: 'Group', user_id: @user.id)
     @entity = Entity.create(name: 'Transaction', amount: '100', group_id: @group.id, user_id: @user.id,
                             author_id: @user.id)

@@ -150,7 +150,7 @@ You can deploy this project using:
 
 
  <a href="https://render.com/">Visit Render</a>
-  
+
   by following the docs instructions
 
 
@@ -164,7 +164,7 @@ You can deploy this project using:
 
 - GitHub: [@githubhandle](https://github.com/Cisco-the-wayword)
 - Twitter: [@twitterhandle](https://twitter.com/the_wayword1)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/boluwatife-adegboyega )
+- LinkedIn: [LinkedIn](https://linkedin.com/in/boluwatife-adegboyega/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 

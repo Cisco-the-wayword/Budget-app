@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.feature 'login page', type: :feature do
   before(:each) do
-    @user = User.create(name: 'Salman', email: 'fpsapc@gmail.com', password: '123456')
+    @user = User.create(name: 'Cisco', email: 'me@gmail.com', password: '123456')
   end
 
   background { visit new_user_session_path }
@@ -20,7 +20,7 @@ RSpec.feature 'login page', type: :feature do
 
     it 'should not login with invalid credentials' do
       visit new_user_session_path
-      fill_in 'Email', with: 'fpsapc@email.com'
+      fill_in 'Email', with: 'me@email.com'
       fill_in 'Password', with: '???'
       click_button 'Log in'
       expect(page).to have_content 'Invalid Email or password.'

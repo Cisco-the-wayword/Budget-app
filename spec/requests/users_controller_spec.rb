@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
   before(:each) do
-    @user = User.create(name: 'Salman', email: 'fpsapc@gmail.com', password: '123456')
+    @user = User.create(name: 'Cisco', email: 'me@gmail.com', password: '123456')
   end
   describe 'GET /users' do
     it 'returns http success' do
